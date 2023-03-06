@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-container{
+    height: 60px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    color: #ffff;
+    border-bottom: 1px solid #ffff;
+    position: sticky;
+    z-index: 10;
+    right: 0;
+    left: 0;
+    top: 0;
+
+}
+.right{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.left{
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right span a{
+    text-decoration: none;
+    color: #ffff;
+    padding-right: 20px;
+}
+
+.main-mid{
+    margin: auto;
+}
+
+.mid{
+    margin: auto;
+    height: 650px;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #000000;
+    color: white;
+}
+
+.mid h1{
+    padding-left: 150px;
+    line-height: 100px;
+    font-family: 'Inter', sans-serif;;
+    font-size: 120px;
+    margin: 80px 50px;
+    animation-name: any;
+    animation-duration: 2s;
+    
+
+}
+
+@keyframes any {
+        from {
+        color: white;
+        }
+        to {
+        color: rgb(125, 228, 142);
+        }
+
+}
+
+.mid img{
+    width: 500px;
+    position: absolute;
+    right: 150px;
+    bottom: 20px;
+}
+
+.mid > a .arrow{
+    position: absolute;
+    width: 30px;
+    height: 47px;
+    left: 600px;
+    bottom: 30px;
+}
+
+.hero{
+    margin: 80px 1px;
+    height: 400px;
+    background-color: #ffff;
+    display: flex;
+    gap: 170px;
+    justify-content: space-evenly;
+}
+
+.hero .right-hero > img{
+    width: 330px;
+    height: 410px;
+}
+
+.hero .left-hero > p{
+    width: 600px;
+    padding: 60px  0;
+}
+
+.left-hero h1{
+    font-size: 60px;
+}
+
+.card-container{
+    margin-left: 63px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 40px;
+    width: auto;
+    padding: 80px 20px;
+    overflow-x: scroll;
+}
+
+.our_service{
+    width: 360px;
+    padding-left: 80px;
+}
+
+
+.card-container .cards{
+    width: 330px;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.card-holder{
+    height: 470px;
+}
+
+h4{
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+
+.cards:hover{
+    background-color: black;
+    color: white;
+    transition-delay:0.3s;
+}
+
+footer{
+    height: 540px;
+    background-color: #000000;
+}
+
+form{
+    margin: 0px auto;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+    width: 900px;
+}
+
+input{
+    border-radius: 3px;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+
+footer img{
+    margin: 40px 460px;
+    width: 360px;
+}
+
+form button{
+    padding: 7px 15px;
+    width: 150px;
+}
+
+
+
+@media (max-width: 600px) {
+    .right{
+        flex-flow: column wrap;
+    }
+
+    .mid{
+        flex-flow: column wrap;
+    }
+
+    .hero{
+        flex-flow: column wrap;
+    }
+
+    .card-holder{
+        grid-template-columns: auto;
+        justify-items: center;
+    }
+}
